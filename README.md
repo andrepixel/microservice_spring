@@ -1,3 +1,7 @@
+## Disclaimer ⚠
+
+> Esse projeto está em construção.
+
 <p align="center">
 <img src="https://github.com/andrepixel/microservice_spring/blob/main/javakotlin.png" border="10"/>
 </p>
@@ -9,10 +13,6 @@
 <p align="center">
 <img src="https://github.com/andrepixel/microservice_spring/blob/main/Diagram_project_microservice_spring.drawio.svg" border="10"/>
 </p>
-
-## Disclaimer ⚠
-
-> Esse projeto está em construção.
 
 ### Problema
 
