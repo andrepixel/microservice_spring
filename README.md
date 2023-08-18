@@ -36,7 +36,7 @@
 
 #### [Primeiro Projeto](https://github.com/andrepixel/microservice_spring_project_1)
 
- Esse projeto consiste em fazer toda a regra de negócio, do qual o time não tem conhecimento. Aqui, simulamos um **Worker** que cria todo o **Ticket** e envia para uma fila do **Kafka**.
+ Esse projeto consiste em fazer toda a regra de negócio, do qual o time não tem conhecimento. Aqui, simulamos um **Worker** que cria todo o **Ticket** e envia para uma fila do **Kafka(all_tickets)**.
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -44,15 +44,15 @@
 
   > Work in progress...
 
-  Esse projeto é um **Worker** que consiste em fazer uma validação inicial da estrutura do **Ticket** e fazer uma separação de **Ticket** de cada cinema, e enviar para a **API**.
+  Esse projeto é um **Worker** que consiste em fazer uma validação inicial da estrutura do **Ticket**, que vai ser buscado de uma fila do **Kafka(all_tickets)** e fazer uma separação de **Ticket** de cada cinema, e enviar para a **API**, em sua respectiva rota.
 
---------------------------------------------------------------------------------------------------------------------
+---
 
 #### [Terceiro Projeto](https://github.com/andrepixel/microservice_spring_project_3) 
 
    Esse projeto é uma **API** que consiste em validar a estrutura enviada pelos **Workers** nas pontas, e enviar a estrutura do dado(Ticket) para os devidos **documents** no **MongoDB**.
 
---------------------------------------------------------------------------------------------------------------------
+---
 
 #### Quarto Projeto 
 
@@ -60,7 +60,7 @@
 
   Esse projeto é um **Worker** que consiste em fazer a requisição para a **API** fazer validações, e caso esteja tudo certo, fazer uma outra requisição para a **API** que o **Ticket** foi validado e enviado para a fila do **Kafka** correspondente.
   
---------------------------------------------------------------------------------------------------------------------
+---
 
 #### Quinto Projeto
 
@@ -68,7 +68,7 @@
 
   Esse projeto é um **Worker** que consiste em fazer a requisição para a **API** fazer validações, e caso esteja tudo certo, fazer uma outra requisição para a **API** que o **Ticket** foi validado e enviado para a fila do **Kafka** correspondente.
 
---------------------------------------------------------------------------------------------------------------------
+---
 
 #### Sexto Projeto
 
@@ -76,4 +76,4 @@
 
   Esse projeto é um **Worker** que consiste em fazer a requisição para a **API** fazer validações, e caso esteja tudo certo, fazer uma outra requisição para a **API** que o **Ticket** foi validado e enviado para a fila do **Kafka** correspondente.
 
---------------------------------------------------------------------------------------------------------------------
+---
